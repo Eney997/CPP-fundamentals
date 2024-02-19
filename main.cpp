@@ -34,5 +34,25 @@ int main()
     float ganatlebisQulaSec = 3.0;
 
 
+
+    //Working with STRINGS
+
+
+    string rameStringi = "lorem";
+    rameStringi[0] = 'A';
+
+    cout << rameStringi.length()<< endl;
+    cout << rameStringi[0]<< endl;
+    cout << rameStringi<< endl;
+    cout << rameStringi.substr(1,3)<< endl;
+
+    string secramestr = "raviShechema";
+    string thirdramestr;
+    thirdramestr = secramestr.substr(0,3);
+    cout<<thirdramestr;
+
+
+
+
     return 0;
 }
