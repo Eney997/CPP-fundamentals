@@ -26,6 +26,12 @@ int main()
 
     // Data tipes
 
+    char grade = 'A';
+    string phrases = "My name";
+    int asak = 12;
+    double ganatlebisQula = 3.2;
+    bool isMale = true;
+    float ganatlebisQulaSec = 3.0;
 
 
     return 0;
