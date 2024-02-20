@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -51,6 +52,60 @@ int main()
     thirdramestr = secramestr.substr(0,3);
     cout<<thirdramestr;
 
+
+
+    //Working with Numbers
+
+    cout << 10*5 << endl ;
+    cout << 10%3 << endl ;
+    cout << (10+10)*8<< endl;
+
+    int wnum = 5;
+    double dnum = 5.6;
+
+    wnum++;
+    cout << wnum<< endl;
+
+    cout <<5.5+9<<endl;
+
+    cout << 10.0/3<< endl; //difference float and mtel num
+    cout <<10/3<<endl;
+
+    cout << pow(2,5)<<endl;
+    cout << sqrt(36)<<endl;
+    cout << round(4.563)<< endl;
+    cout << floor(4.8) << endl;
+    cout << fmax(2,9)<<endl;
+    cout << fmin(2,9)<<endl;
+
+
+
+   // Getting user input
+
+
+    int asake;
+    cout << "Enter your age: " ;
+    cin >> asake; //cins stringtan ar viyenebt
+    cout << "you are "<<asake<<" years old"<<endl;
+
+
+    string saxele;
+    cout << "Enter Your Name: ";
+    getline(cin,saxele); // ase iqcevi stringtan funcia chirdeba
+    cout<<"Your name is "<<saxele<<""<< endl;
+
+
+    //calculator in C++
+
+    int num1 , num2;
+
+    cout << "Enter Your first number: ";
+    cin >> num1;
+
+    cout << "Enter Your second number: ";
+    cin >> num2;
+
+    cout << num1+num2;
 
 
 
