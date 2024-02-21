@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    //dworing a shape samkutxedi
+    //dworing a shape samkutxedi addingtommorow
 
     cout << "   /|" << endl;
     cout << "  / |" << endl;
