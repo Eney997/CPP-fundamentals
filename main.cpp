@@ -95,17 +95,48 @@ int main()
     cout<<"Your name is "<<saxele<<""<< endl;
 
 
-    //calculator in C++
+    // cpp calc ez level
 
-    int num1 , num2;
+    double num1,num2;
 
-    cout << "Enter Your first number: ";
+    cout << "Enter first num: ";
     cin >> num1;
 
-    cout << "Enter Your second number: ";
+    cout <<"Enter sec NUm: ";
     cin >> num2;
 
-    cout << num1+num2;
+    cout <<num1+num2;
+
+
+
+    // mad libs game
+
+
+    string color , plurar , celebrity;
+
+    cout << "Enter a color: ";
+    getline(cin,color);
+
+    cout << "Enter a plurar: ";
+    getline(cin,plurar);
+
+    cout << "Enter a celebrity: ";
+    getline(cin,celebrity);
+
+
+    cout << "Roses are "<< color <<"" << endl;
+    cout << ""<<plurar<<" are blue" << endl;
+    cout << "Fuck you "<<celebrity<<" " << endl;
+
+
+
+    // array masivebi
+
+    int luckyNum[20] = {2,5,1,7,8,22,332};
+
+    luckyNum[0] = 19; // gadaewereba da 19 daibechdeba
+
+    cout << luckyNum[0];
 
 
 
