@@ -3,8 +3,14 @@
 
 using namespace std;
 
+
+    void sayHi(string name, int age);
+    double cube(double num);
+    int getMax(int rcx1,int rcx2 ,int rcx3);
+
 int main()
 {
+
     //dworing a shape samkutxedi addingtommorow
 
     cout << "   /|" << endl;
@@ -139,6 +145,102 @@ int main()
     cout << luckyNum[0];
 
 
+    // function inc++
+
+    sayHi("Rene",20);
+    sayHi("Jacob",20);
+    sayHi("Ruby",20);
+    sayHi("Louis",20);
+    sayHi("Rustin",20);
+
+
+
+    // return statemant in C++
+
+    double answer = cube(90);
+    cout<< answer<< endl;
+
+
+     // if statemant in C++
+
+
+    bool mamri = true;
+    bool isTall = true;
+
+    if(mamri && isTall){
+        cout<< "You are a tall male";
+    }else if(mamri && !isTall){
+        cout<< "You are short man";
+    }else if(!mamri && isTall){
+        cout<< "you are tall but pussy";
+    } else {
+        cout<< "You are not a tall male";
+    };
+
+
+    // more about if statemant
+
+     cout<<getMax(1,2,3)<< endl;
+
+     // building normal calculator
+     double mun1;
+     double mun2;
+     char ope;
+
+     cout << "Enter your first number: ";
+     cin >> mun1;
+
+     cout << "Enter your second number: ";
+     cin >> mun2;
+
+     cout << "Enter your operator: ";
+     cin >> ope;
+
+     int rees;
+     if(ope == '+'){
+        rees = mun1+mun2;
+     }else if(ope == '-'){
+        rees =  mun1-mun2;
+     }else if(ope == '/'){
+        rees = mun1/mun2;
+     }else if(ope == '*'){
+        rees = mun1*mun2;
+     }else {
+        cout<< "Error 404 : Please enter the number";
+     }
+     cout<< rees;
+
+
+
+
+     // switch case
+
+
 
     return 0;
 }
+
+
+    void sayHi(string name, int age){
+     cout<<"hello "<< name<<" you are "<<age<<" years old "<< endl;
+    };
+
+    double cube(double num){
+     double result = num*num*num;  // also u can write like that return num*num*num; shortCode
+     return result;
+    };
+
+
+    int getMax(int rcx1,int rcx2,int rcx3){
+      int result;
+      if(rcx1 >= rcx2 && rcx1 >= rcx3){
+        result = rcx1;
+      }else if(rcx2 >= rcx1 && rcx2 >= rcx3){
+        result = rcx2;
+      }else{
+        result = rcx3;
+      }
+      return result;
+    };
+
+
