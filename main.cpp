@@ -7,9 +7,12 @@ using namespace std;
     void sayHi(string name, int age);
     double cube(double num);
     int getMax(int rcx1,int rcx2 ,int rcx3);
+    string getDayOfWeek(int dayNum);
 
 int main()
 {
+
+
 
     //dworing a shape samkutxedi addingtommorow
 
@@ -215,6 +218,29 @@ int main()
 
      // switch case
 
+     cout<<getDayOfWeek(0)<<endl;
+
+
+
+     // while and do while loop in C++
+
+     int i = 1;
+     while(i<=5){
+        cout<<i <<endl;
+        i++;
+     };
+
+     int j = 6;
+     do{
+        cout << j<< endl;
+        j++;
+     }while(j<=5);
+
+
+
+
+
+
 
 
     return 0;
@@ -242,5 +268,36 @@ int main()
       }
       return result;
     };
+
+    string getDayOfWeek(int dayNum){
+       string dayName;
+
+       switch(dayNum){
+       case 0 :
+       dayName = "Sunday";
+       break;
+       case 1:
+        dayName = "Monday";
+        break;
+        case 2:
+        dayName = "Thuesday";
+        break;
+        case 3:
+        dayName = "Wednesday";
+        break;
+        case 4:
+        dayName = "Thursday";
+        break;
+        case 5:
+        dayName = "Friday";
+        break;
+        case 6:
+        dayName = "Saturday";
+        break;
+        default:
+            dayName = "Invalid statemant";
+       }
+       return dayName;
+    }
 
 
