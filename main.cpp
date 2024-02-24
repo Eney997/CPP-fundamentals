@@ -13,7 +13,6 @@ int main()
 {
 
 
-
     //dworing a shape samkutxedi addingtommorow
 
     cout << "   /|" << endl;
@@ -237,9 +236,40 @@ int main()
      }while(j<=5);
 
 
+     // bilding guessing game
+
+     int secretNum = 7;
+     int guess;
+     int guessCount = 0;
+     int guessLimit = 3;
+     bool outOfGuesses = false;
+
+     while(secretNum != guess && !outOfGuesses){
+        if(guessCount<guessLimit){
+        cout<< "Enter guess: ";
+        cin >> guess;
+        guessCount++;
+        }else {
+        outOfGuesses = true;
+       }
+     };
+     if(outOfGuesses){
+     cout<<"You Lose!"<<endl;
+     }else{
+     cout<<"You Win!"<< endl;
+     };
 
 
+     // for loop in c++
 
+     int ebi[] = {1,3,9,12,34,322};
+
+     for(int l = 0 ;l<5;l++){
+        cout<<ebi[l]<<endl;
+     };
+
+
+     //exponent functions
 
 
 
@@ -269,6 +299,7 @@ int main()
       return result;
     };
 
+
     string getDayOfWeek(int dayNum){
        string dayName;
 
@@ -296,8 +327,8 @@ int main()
         break;
         default:
             dayName = "Invalid statemant";
-       }
+       };
        return dayName;
-    }
+    };
 
 
