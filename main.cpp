@@ -8,6 +8,7 @@ using namespace std;
     double cube(double num);
     int getMax(int rcx1,int rcx2 ,int rcx3);
     string getDayOfWeek(int dayNum);
+    int power(int baseNumber, int powerNumber);
 
 int main()
 {
@@ -268,8 +269,60 @@ int main()
         cout<<ebi[l]<<endl;
      };
 
+    //exponent function in c++
 
-     //exponent functions
+    cout<<power(4,2)<<endl;
+
+
+    //2d array nested loop
+    //gridRow ramdeni obja
+    //gridColumn ramdeni elementia im objebshi
+    //row horizontali
+    //column vertikali
+    int numberGrid[3][2] = {
+                         {1,2},
+                         {3,4},
+                         {5,6}
+                         };
+    //cout<<numberGrid[0][0]<<endl; amoigebs romel elementsac ginda calke
+
+    for(int b = 0;b<3;b++){
+        for(int x = 0;x<2;x++){
+            cout<<numberGrid[b][x];
+        }
+        cout<<endl;
+    }
+
+
+    // coments in c++
+
+    //*forward slashes are comments*//
+
+
+
+    //pointers in c++
+
+    int ageee = 19;
+    int *pAge = &ageee; //pointer memory saved in variable
+    double  gpaaa = 2.7;
+    string nameeee = "Rene";
+
+    cout <<"Age: "<< &ageee <<endl;
+    cout <<"Gpa: "<< &gpaaa <<endl;
+    cout <<"Name: "<< &nameeee <<endl;
+    cout <<pAge<<endl;
+
+
+    // dereferencing pointer
+    // means you are stealing information which one is inside pointer addres i mean information wich one is holded by pointer
+    cout<<*pAge<<endl;// ase amoigeb mnishvnelobas rac pontershi imaleba ogond aq viyeneb pointer cvlads
+    cout<<*&ageee<<endl; // asec amoigeb mnishvnelobas ogond aq viyeneb !pointer cvlads
+    // astrixs amateb cvlads da egaa ra
+    //umtyvnelesi ragacaa dzma
+
+
+    //classes and objects
+
 
 
 
@@ -330,5 +383,15 @@ int main()
        };
        return dayName;
     };
+
+
+    int power(int baseNumber, int powerNumber){
+    int result = 1;
+
+    for(int q = 0;q< powerNumber;q++){
+        result = result * baseNumber;
+    }
+    return result;
+}
 
 
