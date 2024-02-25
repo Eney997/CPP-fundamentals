@@ -9,11 +9,15 @@ using namespace std;
     int getMax(int rcx1,int rcx2 ,int rcx3);
     string getDayOfWeek(int dayNum);
     int power(int baseNumber, int powerNumber);
+    class Book{
+    public:
+       string tittle;
+       string author;
+       int pages;
+    };
 
 int main()
 {
-
-
     //dworing a shape samkutxedi addingtommorow
 
     cout << "   /|" << endl;
@@ -323,6 +327,30 @@ int main()
 
     //classes and objects
 
+    Book book1;
+    book1.tittle = "Harry Potter";
+    book1.author = "KJ Rowling";
+    book1.pages = 500;
+
+    Book book2;
+    book2.tittle = "Lord of the rings";
+    book2.author = "Tolkein";
+    book2.pages = 900;
+
+
+    cout<<book1.tittle<<endl;
+    cout<<book1.author<<endl;
+    cout<<book1.pages<<endl;
+    cout<<book2.tittle<<endl;
+    cout<<book2.author<<endl;
+    cout<<book2.pages<<endl;
+
+
+
+    //constructor function
+
+
+
 
 
 
@@ -393,5 +421,3 @@ int main()
     }
     return result;
 }
-
-
