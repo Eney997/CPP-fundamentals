@@ -14,6 +14,9 @@ using namespace std;
        string tittle;
        string author;
        int pages;
+       Book(){
+
+       }
     };
 
 int main()
@@ -37,7 +40,6 @@ int main()
     cout << "He liked the name " << name << endl;
     cout << "But didnt liked being " << age << endl;
 
-
     // Data tipes
 
     char grade = 'A';
@@ -47,10 +49,7 @@ int main()
     bool isMale = true;
     float ganatlebisQulaSec = 3.0;
 
-
-
     //Working with STRINGS
-
 
     string rameStringi = "lorem";
     rameStringi[0] = 'A';
@@ -64,8 +63,6 @@ int main()
     string thirdramestr;
     thirdramestr = secramestr.substr(0,3);
     cout<<thirdramestr;
-
-
 
     //Working with Numbers
 
@@ -91,22 +88,17 @@ int main()
     cout << fmax(2,9)<<endl;
     cout << fmin(2,9)<<endl;
 
-
-
    // Getting user input
-
 
     int asake;
     cout << "Enter your age: " ;
     cin >> asake; //cins stringtan ar viyenebt
     cout << "you are "<<asake<<" years old"<<endl;
 
-
     string saxele;
     cout << "Enter Your Name: ";
     getline(cin,saxele); // ase iqcevi stringtan funcia chirdeba
     cout<<"Your name is "<<saxele<<""<< endl;
-
 
     // cpp calc ez level
 
@@ -120,10 +112,7 @@ int main()
 
     cout <<num1+num2;
 
-
-
     // mad libs game
-
 
     string color , plurar , celebrity;
 
@@ -141,8 +130,6 @@ int main()
     cout << ""<<plurar<<" are blue" << endl;
     cout << "Fuck you "<<celebrity<<" " << endl;
 
-
-
     // array masivebi
 
     int luckyNum[20] = {2,5,1,7,8,22,332};
@@ -150,7 +137,6 @@ int main()
     luckyNum[0] = 19; // gadaewereba da 19 daibechdeba
 
     cout << luckyNum[0];
-
 
     // function inc++
 
@@ -160,16 +146,12 @@ int main()
     sayHi("Louis",20);
     sayHi("Rustin",20);
 
-
-
     // return statemant in C++
 
     double answer = cube(90);
     cout<< answer<< endl;
 
-
      // if statemant in C++
-
 
     bool mamri = true;
     bool isTall = true;
@@ -183,7 +165,6 @@ int main()
     } else {
         cout<< "You are not a tall male";
     };
-
 
     // more about if statemant
 
@@ -217,14 +198,9 @@ int main()
      }
      cout<< rees;
 
-
-
-
      // switch case
 
      cout<<getDayOfWeek(0)<<endl;
-
-
 
      // while and do while loop in C++
 
@@ -239,7 +215,6 @@ int main()
         cout << j<< endl;
         j++;
      }while(j<=5);
-
 
      // bilding guessing game
 
@@ -263,7 +238,6 @@ int main()
      }else{
      cout<<"You Win!"<< endl;
      };
-
 
      // for loop in c++
 
@@ -297,12 +271,9 @@ int main()
         cout<<endl;
     }
 
-
     // coments in c++
 
     //*forward slashes are comments*//
-
-
 
     //pointers in c++
 
@@ -332,6 +303,7 @@ int main()
     book1.author = "KJ Rowling";
     book1.pages = 500;
 
+
     Book book2;
     book2.tittle = "Lord of the rings";
     book2.author = "Tolkein";
@@ -345,18 +317,15 @@ int main()
     cout<<book2.author<<endl;
     cout<<book2.pages<<endl;
 
+    // constructors
 
+    //Book book1 ("Harry Potter","KJ Rowling",500);
+    //Book book2("Lord of the rings","Tolkein",900);
 
-    //constructor function
-
-
-
-
-
+    //mgoni propsebia ideashi
 
     return 0;
 }
-
 
     void sayHi(string name, int age){
      cout<<"hello "<< name<<" you are "<<age<<" years old "<< endl;
